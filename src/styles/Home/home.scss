@@ -296,7 +296,7 @@ main {
       gap: 1.5rem;
       margin-bottom: 2rem;
       .card {
-        min-width: 400px;
+        width: 400px;
         @include flex-center();
         cursor: pointer;
         min-height: 240px;
@@ -575,13 +575,53 @@ main {
     margin-top: 2rem;
     .item1 {
       width: 100%;
+      position: relative;
       height: 576px;
       background-color: #04bfbf;
       border-radius: 8px;
+      overflow: hidden;
+
+      .content{
+        padding: 4rem;
+        @include flex-start-col();
+        gap: 1rem;
+        .top{
+          font-size: var(--text-25);
+          font-weight: var(--font-semibold);
+          color: var(--bg-yellow);
+        }
+        .title{
+          font-size: var(--text-64);
+          font-weight: bold;
+          color: var(--text-white);
+        }
+        .text{
+          font-size: var(--text-30);
+          font-weight: var(--font-regular);
+          color: var(--text-white);
+          margin-bottom: 1rem;
+        }
+        button{
+          background: var(--bg-yellow);
+          border: 0;
+          border-radius: 6px;
+          color: var(--text-black);
+          font-size: var(--text-18);
+          font-weight: var(--font-semibold);
+          padding: 1rem 2rem;
+        }
+      }
+      img{
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        right: -10%;
+      }
     }
     .item2 {
       width: 50%;
       display: grid;
+      height: 576px;
       grid-template-columns: repeat(1, 1fr);
       gap: 1rem;
 
@@ -589,6 +629,7 @@ main {
         width: 100%;
         position: relative;
         background: #000;
+        overflow: hidden;
         border-radius: 8px;
         height: 280px;
         img{
@@ -682,6 +723,7 @@ main {
         background-color: var(--bg-gray);
         border-radius: 12px;
         position: relative;
+        @include padding();
         .card {
           @include flex-center-col();
           & > img {
