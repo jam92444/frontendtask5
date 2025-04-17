@@ -1144,6 +1144,9 @@ footer > div .news .items1 .content div input {
   border: 0;
   background-color: transparent;
 }
+footer > div .news .item2 .content img {
+  width: 80%;
+}
 footer > p {
   background-color: var(--bg-light-blue);
   padding: 1.2rem 1rem;

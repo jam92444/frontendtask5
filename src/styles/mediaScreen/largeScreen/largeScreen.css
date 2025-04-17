@@ -511,6 +511,9 @@ select {
   }
 }
 @media screen and (max-width: 550px) {
+  body {
+    overflow-x: hidden;
+  }
   nav ul {
     width: 100%;
     font-size: var(--text-xs);
@@ -645,7 +648,7 @@ select {
     font-size: var(--text-17);
   }
   main #feedback .content .canvas {
-    height: 450px;
+    height: 500px;
     width: 90%;
   }
   main #feedback .content .canvas .profile > p {
@@ -658,6 +661,7 @@ select {
   footer #service > div .service-card {
     justify-content: flex-start;
     border-right: 0;
+    text-wrap: wrap;
   }
   footer > div {
     width: 100%;

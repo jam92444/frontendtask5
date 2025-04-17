@@ -1076,7 +1076,7 @@ footer {
           @include flex-start-col();
           gap: 0.5rem;
         }
-        img{
+        img {
           width: 40px;
         }
       }
@@ -1163,6 +1163,13 @@ footer {
               border: 0;
               background-color: transparent;
             }
+          }
+        }
+      }
+      .item2 {
+        .content{
+          img{
+            width: 80%;
           }
         }
       }

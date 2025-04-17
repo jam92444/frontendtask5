@@ -662,6 +662,9 @@ select {
 }
 
 @media screen and (max-width: 550px) {
+  body{
+    overflow-x: hidden;
+  }
   nav {
     ul {
       width: 100%;
@@ -829,7 +832,7 @@ select {
       }
       .content {
         .canvas {
-          height: 450px;
+          height: 500px;
           width: 90%;
           .profile {
             & > p {
@@ -850,6 +853,7 @@ select {
         .service-card {
           justify-content: flex-start;
           border-right: 0;
+          text-wrap: wrap;
         }
       }
     }
