@@ -676,8 +676,13 @@ select {
   }
   header {
     .items {
+      gap: .5rem;
+
       div,
       .separator {
+        display: none;
+      }
+      .heart{
         display: none;
       }
     }
@@ -686,6 +691,7 @@ select {
     #hero {
       height: 300px;
       .content {
+        padding: .6rem;
         top: 10%;
         .title {
           .bold {

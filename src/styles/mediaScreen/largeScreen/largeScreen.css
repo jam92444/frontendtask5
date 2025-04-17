@@ -513,14 +513,21 @@ select {
   nav div {
     display: none;
   }
+  header .items {
+    gap: 0.5rem;
+  }
   header .items div,
   header .items .separator {
+    display: none;
+  }
+  header .items .heart {
     display: none;
   }
   main #hero {
     height: 300px;
   }
   main #hero .content {
+    padding: 0.6rem;
     top: 10%;
   }
   main #hero .content .title {
