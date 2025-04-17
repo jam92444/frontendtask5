@@ -270,6 +270,9 @@ select {
   header .items .separator {
     display: none;
   }
+  main {
+    padding: 1rem 3rem;
+  }
   main #hero {
     height: 300px;
   }
@@ -366,6 +369,9 @@ select {
     width: 100%;
     padding-top: 9rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+  footer > p {
+    font-size: var(--text-15);
   }
 }
 @media screen and (max-width: 660px) {
@@ -523,6 +529,9 @@ select {
   header .items .heart {
     display: none;
   }
+  main {
+    padding: 0.5rem 1rem;
+  }
   main #hero {
     height: 300px;
   }
@@ -648,5 +657,8 @@ select {
     width: 100%;
     padding-top: 18rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+  footer > p {
+    font-size: var(--text-xs);
   }
 }/*# sourceMappingURL=largeScreen.css.map */
