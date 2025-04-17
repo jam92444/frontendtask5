@@ -40,6 +40,9 @@ body {
   font-family: "Asap", sans-serif;
   max-width: 1380px;
   margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   overflow-x: hidden;
   background-color: var(--bg-white);
 }
