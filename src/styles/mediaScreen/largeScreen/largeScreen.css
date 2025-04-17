@@ -142,10 +142,50 @@ select {
   main #category .products {
     grid-template-columns: repeat(3, 1fr);
   }
+  footer #service > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer #service > div .service-card {
+    justify-content: flex-start;
+  }
+  footer > div {
+    width: 100%;
+    padding-top: 9rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (max-width: 1050px) {
   header .search {
     display: none;
+  }
+  main #popular .title {
+    max-width: 80%;
+  }
+  main #popular .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main #feedback {
+    padding: 2rem 1rem;
+  }
+  main #feedback .title {
+    max-width: 90%;
+    text-align: center;
+  }
+  main #feedback .title .top {
+    font-size: var(--text-30);
+  }
+  main #feedback .title .regular {
+    font-size: var(--text-17);
+  }
+  main #feedback .content .canvas {
+    height: 400px;
+  }
+  main #feedback .content .canvas .profile .account img {
+    width: 45px;
+    height: 45px;
+  }
+  main #feedback .content .canvas .profile > p {
+    max-width: 70%;
   }
 }
 @media screen and (max-width: 950px) {
@@ -218,7 +258,7 @@ select {
     width: 50%;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 850px) {
   nav ul {
     width: 80%;
     margin: 0 auto;
@@ -226,7 +266,8 @@ select {
   nav div {
     display: none;
   }
-  header .items div, header .items .separator {
+  header .items div,
+  header .items .separator {
     display: none;
   }
   main #hero {
@@ -268,25 +309,76 @@ select {
     height: auto;
   }
   main #category .title .items p {
-    font-size: var(--text-36);
+    font-size: var(--text-25);
   }
   main #category .title .items p .bold {
     font-weight: var(--font-bold);
   }
+  main #category .title .items div p {
+    width: 20px;
+    height: 20px;
+  }
+  main #category .title .items div p img {
+    width: 8px;
+  }
   main #category .products {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main #popular .title {
+    max-width: 80%;
+  }
+  main #popular .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main #popular .cards .card {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  main #feedback {
+    padding: 2rem 1rem;
+  }
+  main #feedback .title {
+    max-width: 80%;
+    text-align: center;
+  }
+  main #feedback .title .top {
+    font-size: var(--text-30);
+  }
+  main #feedback .title .regular {
+    font-size: var(--text-17);
+  }
+  main #feedback .content .canvas {
+    height: 400px;
+    width: 90%;
+  }
+  main #feedback .content .canvas .profile > p {
+    max-width: 70%;
+    font-size: var(--text-15);
+  }
+  footer #service > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer #service > div .service-card {
+    justify-content: flex-start;
+  }
+  footer > div {
+    width: 100%;
+    padding-top: 9rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 660px) {
   nav ul {
     width: 80%;
+    gap: 2rem;
     margin: 0 auto;
   }
   nav div {
     display: none;
   }
-  header .items div, header .items .separator {
+  header .items div,
+  header .items .separator {
     display: none;
   }
   main #hero {
@@ -324,11 +416,31 @@ select {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  main #popular .title {
+    max-width: 100%;
+  }
+  main #popular .title .top {
+    font-size: var(--text-36);
+  }
+  main #popular .title .regular {
+    font-size: var(--text-15);
+  }
+  main #popular .cards .card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   main #feature .title .items p {
     font-size: var(--text-36);
   }
   main #feature .title .items p .bold {
     font-weight: var(--font-bold);
+  }
+  main #feature .title .items div p {
+    width: 20px;
+    height: 20px;
+  }
+  main #feature .title .items div p img {
+    width: 8px;
   }
   main #feature .products {
     grid-template-columns: repeat(1, 1fr);
@@ -357,5 +469,177 @@ select {
   }
   main #feature .products .item2 .card .details {
     align-items: start;
+  }
+  main #feedback {
+    padding: 2rem 1rem;
+  }
+  main #feedback .title {
+    max-width: 80%;
+    text-align: center;
+  }
+  main #feedback .title .top {
+    font-size: var(--text-30);
+  }
+  main #feedback .title .regular {
+    font-size: var(--text-17);
+  }
+  main #feedback .content .canvas {
+    height: 450px;
+    width: 90%;
+  }
+  main #feedback .content .canvas .profile > p {
+    max-width: 70%;
+    font-size: var(--text-15);
+  }
+  footer #service > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer #service > div .service-card {
+    justify-content: flex-start;
+    border-right: 0;
+  }
+  footer > div {
+    width: 100%;
+    padding-top: 18rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  nav ul {
+    width: 100%;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+  nav div {
+    display: none;
+  }
+  header .items div,
+  header .items .separator {
+    display: none;
+  }
+  main #hero {
+    height: 300px;
+  }
+  main #hero .content {
+    top: 10%;
+  }
+  main #hero .content .title {
+    font-size: var(--text-200);
+  }
+  main #hero .content .title .bold {
+    font-size: var(--text-25);
+  }
+  main #hero .content button {
+    padding: 0.8rem 0.5rem;
+  }
+  main #hero .img1 {
+    width: 45%;
+    height: 44%;
+  }
+  main #banner2 {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+  main #banner2 .item2 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  main #category .title .items p {
+    font-size: var(--text-36);
+  }
+  main #category .title .items p .bold {
+    font-weight: var(--font-bold);
+  }
+  main #category .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main #popular .title {
+    max-width: 100%;
+  }
+  main #popular .title .top {
+    font-size: var(--text-36);
+  }
+  main #popular .title .regular {
+    font-size: var(--text-15);
+  }
+  main #popular .cards .card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  main #feature .title .items p {
+    font-size: var(--text-36);
+  }
+  main #feature .title .items p .bold {
+    font-weight: var(--font-bold);
+  }
+  main #feature .title .items div p {
+    width: 20px;
+    height: 20px;
+  }
+  main #feature .title .items div p img {
+    width: 8px;
+  }
+  main #feature .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main #feature .products .item1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  main #feature .products .item1 .card img {
+    width: 50%;
+  }
+  main #feature .products .item2 .card .image > img {
+    width: 80%;
+  }
+  main #feature .products .item2 .card .image .icons {
+    gap: 0.5rem;
+  }
+  main #feature .products .item2 .card .image .icons p {
+    width: 40px;
+    height: 40px;
+  }
+  main #feature .products .item2 .card .image .icons p img {
+    width: 15px;
+  }
+  main #feature .products .item2 .card .details {
+    align-items: start;
+  }
+  main #feedback {
+    padding: 2rem 1rem;
+  }
+  main #feedback .title {
+    max-width: 80%;
+    text-align: center;
+  }
+  main #feedback .title .top {
+    font-size: var(--text-30);
+  }
+  main #feedback .title .regular {
+    font-size: var(--text-17);
+  }
+  main #feedback .content .canvas {
+    height: 450px;
+    width: 90%;
+  }
+  main #feedback .content .canvas .profile > p {
+    max-width: 70%;
+    font-size: var(--text-15);
+  }
+  footer #service > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer #service > div .service-card {
+    justify-content: flex-start;
+    border-right: 0;
+  }
+  footer > div {
+    width: 100%;
+    padding-top: 18rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=largeScreen.css.map */

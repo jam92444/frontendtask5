@@ -646,6 +646,78 @@ main #banner2 .item2 .card .content button {
   font-weight: var(--font-semibold);
   border-radius: 4px;
 }
+main #popular {
+  width: 100%;
+  margin-top: 4rem;
+}
+main #popular .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+main #popular .title .top {
+  font-size: var(--text-45);
+}
+main #popular .title .top .bold {
+  font-weight: var(--font-bold);
+}
+main #popular .title .regular {
+  line-height: 1.5;
+  font-size: var(--text-18);
+  font-weight: var(--font-regular);
+  color: gray;
+}
+main #popular .cards {
+  width: 100%;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+main #popular .cards .card {
+  width: 100%;
+  background-color: var(--bg-sky-blue);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+main #popular .cards .card .upper {
+  text-transform: uppercase;
+  font-size: var(--text-20);
+}
+main #popular .cards .card .bold {
+  font-size: var(--text-30);
+  font-weight: var(--font-semibold);
+  text-align: center;
+}
+main #popular .cards .card .price {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+main #popular .cards .card .price .mrp {
+  color: var(--text-mango);
+  font-size: var(--text-20);
+  text-decoration: line-through;
+}
+main #popular .cards .card .price .offer {
+  color: var(--text-black);
+  font-size: var(--text-20);
+  margin-left: 0.5rem;
+}
+main #popular .cards .card a {
+  color: var(--text-red);
+  text-decoration: underline;
+  font-size: var(--text-20);
+}
+main #popular .cards .card2 {
+  background-color: #f8f8f8;
+}
 main #feature {
   margin-top: 4rem;
 }
@@ -839,4 +911,244 @@ main #feature .products .item2 .card .details .price .mrp {
 main #feature .products .item2 .card .details .price .offer {
   color: var(--text-black);
   font-size: var(--text-16);
+}
+main #feedback {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--bg-sky-blue);
+}
+main #feedback .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+main #feedback .title .top {
+  font-size: var(--text-45);
+}
+main #feedback .title .top .bold {
+  font-weight: var(--font-bold);
+}
+main #feedback .title .regular {
+  line-height: 1.5;
+  font-size: var(--text-18);
+  font-weight: var(--font-regular);
+  color: gray;
+  margin-bottom: 2rem;
+}
+main #feedback .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main #feedback .content .canvas {
+  width: 80%;
+  position: relative;
+  height: 380px;
+}
+main #feedback .content .canvas .bg {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+main #feedback .content .canvas .main {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  min-width: 103%;
+  min-height: 90%;
+  border-radius: 12px;
+  background-color: white;
+}
+main #feedback .content .canvas .main .sample {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main #feedback .content .canvas .main .sample .quote1 {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+main #feedback .content .canvas .main .sample .quote2 {
+  position: absolute;
+  margin-top: 22%;
+  margin-left: 10%;
+}
+main #feedback .content .canvas .main .sample .arrow1 {
+  position: absolute;
+  top: 9rem;
+  left: -1.5rem;
+}
+main #feedback .content .canvas .main .sample .arrow {
+  position: absolute;
+  top: 9rem;
+  right: -1.5rem;
+}
+main #feedback .content .canvas .profile {
+  position: absolute;
+  top: 4rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #feedback .content .canvas .profile .account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main #feedback .content .canvas .profile .account img {
+  width: 65px;
+  height: 65px;
+}
+main #feedback .content .canvas .profile .account div {
+  text-align: center;
+}
+main #feedback .content .canvas .profile .account div h4 {
+  margin-bottom: 0.5rem;
+}
+main #feedback .content .canvas .profile > p {
+  max-width: 60%;
+  text-align: center;
+  line-height: 1.5;
+  color: gray;
+}
+
+footer {
+  width: 100%;
+  margin-top: 6rem;
+  position: relative;
+  background-color: rgba(5, 63, 92, 0.9490196078);
+  z-index: 10;
+}
+footer #service {
+  position: absolute;
+  top: -10rem;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  z-index: 20;
+  margin-bottom: -4rem;
+  margin-top: 4rem;
+}
+footer #service > div {
+  padding: 2rem;
+  background-color: var(--bg-white);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+footer #service > div .service-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-right: 2px solid #f1f1f1;
+}
+footer #service > div .service-card div {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer #service > div .service-card img {
+  width: 40px;
+}
+footer #service > div .last {
+  border-right: 0;
+}
+footer > div {
+  display: grid;
+  padding: 1.5rem 4rem;
+  padding-top: 6rem;
+  width: 100%;
+  color: var(--text-white);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+footer > div .footer-card {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+footer > div .footer-card .title {
+  margin-bottom: 2rem;
+  font-size: var(--text-30);
+  font-weight: var(--font-semibold);
+}
+footer > div .footer-card .content {
+  line-height: 2;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer > div .footer-card .content .flex {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer > div .footer-card .content .flex p {
+  line-height: 1;
+}
+footer > div .footer-card .content .flex img {
+  width: 18px;
+}
+footer > div .footer-card .content .icons p {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--bg-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > div .footer-card .content .icons p img {
+  width: 15px;
+}
+footer > div .footer-card .content .icons p .fb {
+  width: 8px;
+}
+footer > div .news {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer > div .news .items1 .content div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  background-color: #063f5c;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+}
+footer > div .news .items1 .content div img {
+  padding: 1rem;
+  background-color: var(--text-mango);
+}
+footer > div .news .items1 .content div input {
+  width: 100%;
+  padding: 1rem;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+footer > p {
+  background-color: var(--bg-light-blue);
+  padding: 1.2rem 1rem;
+  text-align: center;
+  font-size: var(--text-18);
+  font-weight: var(--font-regular);
+  color: var(--text-white);
 }/*# sourceMappingURL=home.css.map */
