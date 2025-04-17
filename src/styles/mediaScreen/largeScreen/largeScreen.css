@@ -513,14 +513,20 @@ select {
 @media screen and (max-width: 550px) {
   nav ul {
     width: 100%;
-    gap: 2rem;
+    font-size: var(--text-xs);
+    gap: 1.5rem;
     margin: 0 auto;
   }
   nav div {
     display: none;
   }
+  header {
+    padding: 0.5rem;
+    overflow: hidden;
+  }
   header .items {
     gap: 0.5rem;
+    padding-right: 0.5rem;
   }
   header .items div,
   header .items .separator {
